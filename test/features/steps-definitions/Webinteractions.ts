@@ -14,5 +14,10 @@ When (/^Perform web interactions$/, async function () {
     await inputField.click()
     await inputField.setValue("29")
     //addValue will NOT clear field before type
+    /*Dropdown:
+    1. Find element
+    2. Element option await element.selectByVisibleText("") or ByAttribute("attribute", "value")
+    */
+    
     
 })

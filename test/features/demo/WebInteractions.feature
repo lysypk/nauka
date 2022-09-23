@@ -8,5 +8,5 @@ Feature: Web Interactions
         
 
         Examples:
-            | TestID | searchItem | expectedURL |
-            | WEB_TC002  | WDIO  | https://webdriver.io/  |
+            | TestID | 
+            | WEB_TC002  | 

@@ -12,7 +12,7 @@ Then (/^All product have valid price$/, async function () {
         let priceString = await productElements[i].getText()
         priceStringArray.push(priceString)
     }
-    //Convert string to int
+    //Convert string to number - + is converting to number
     let priceNumberArray = priceStringArray.map(ele => +(ele.replace("$", "")))
     //compare with incorrect value
     let invalidPriceArr = priceNumberArray.filter(ele => ele <=0 )

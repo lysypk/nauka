@@ -1,0 +1,1 @@
+import {config as BaseConfig } from "../wdio.conf"

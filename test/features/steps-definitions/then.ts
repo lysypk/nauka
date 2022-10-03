@@ -1,5 +1,6 @@
 import { Then } from "@wdio/cucumber-framework";
 import chai from "chai"
+import logger from "../../helper/logger"
 
 
 

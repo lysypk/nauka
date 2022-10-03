@@ -1,0 +1,53 @@
+
+Execution of 3 workers started at 2022-10-03T06:33:51.133Z
+
+[0-2] RUNNING in chrome - C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\WebInteractions.feature
+[0-0] RUNNING in chrome - C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\AdvancedWebInteractions.feature
+[0-1] RUNNING in chrome - C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\demo.feature
+[0-1] [[32mINFO[39m]: Running chrome and google: Started logger
+[0-0] []
+[0-0] PASSED in chrome - C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\AdvancedWebInteractions.feature
+[0-2] PASSED in chrome - C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\WebInteractions.feature
+[0-1] PASSED in chrome - C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\demo.feature
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[chrome 105.0.5195.127 windows #0-0] Running: chrome (v105.0.5195.127) on windows
+[chrome 105.0.5195.127 windows #0-0] Session ID: 07d16c761666f89a3b95c76f4cf93cb2
+[chrome 105.0.5195.127 windows #0-0]
+[chrome 105.0.5195.127 windows #0-0] » \test\features\demo\AdvancedWebInteractions.feature
+[chrome 105.0.5195.127 windows #0-0] Advanced Web Interactions
+[chrome 105.0.5195.127 windows #0-0] Demo adv interactions
+[chrome 105.0.5195.127 windows #0-0]    [32m✓[39m Given Login to inventory app
+[chrome 105.0.5195.127 windows #0-0]    [32m✓[39m When 6 products are listed
+[chrome 105.0.5195.127 windows #0-0]    [32m✓[39m Then All product have valid price
+[chrome 105.0.5195.127 windows #0-0]
+[chrome 105.0.5195.127 windows #0-0] [32m3 passing (5.2s)[39m
+------------------------------------------------------------------
+[chrome 105.0.5195.127 windows #0-2] Running: chrome (v105.0.5195.127) on windows
+[chrome 105.0.5195.127 windows #0-2] Session ID: 8055ed9eee6607f3630e5e03bada57bf
+[chrome 105.0.5195.127 windows #0-2]
+[chrome 105.0.5195.127 windows #0-2] » \test\features\demo\WebInteractions.feature
+[chrome 105.0.5195.127 windows #0-2] Web Interactions
+[chrome 105.0.5195.127 windows #0-2] WEB_TC002: Demo interactions
+[chrome 105.0.5195.127 windows #0-2]    [32m✓[39m Given Webpage Open
+[chrome 105.0.5195.127 windows #0-2]    [32m✓[39m When Perform web interactions
+[chrome 105.0.5195.127 windows #0-2]
+[chrome 105.0.5195.127 windows #0-2] [32m2 passing (6.2s)[39m
+------------------------------------------------------------------
+[chrome 105.0.5195.127 windows #0-1] Running: chrome (v105.0.5195.127) on windows
+[chrome 105.0.5195.127 windows #0-1] Session ID: b9af16e421dd3d1b0280d8184ba2613b
+[chrome 105.0.5195.127 windows #0-1]
+[chrome 105.0.5195.127 windows #0-1] » \test\features\demo\demo.feature
+[chrome 105.0.5195.127 windows #0-1] Demofeature
+[chrome 105.0.5195.127 windows #0-1] Running chrome and google
+[chrome 105.0.5195.127 windows #0-1]    [32m✓[39m Given Google page is opened
+[chrome 105.0.5195.127 windows #0-1]    [32m✓[39m When Search item WDIO
+[chrome 105.0.5195.127 windows #0-1]    [32m✓[39m Then Click on first search result
+[chrome 105.0.5195.127 windows #0-1]    [32m✓[39m Then URL should match https://webdriver.io/
+[chrome 105.0.5195.127 windows #0-1]
+[chrome 105.0.5195.127 windows #0-1] [32m4 passing (25.3s)[39m
+
+
+Spec Files:	 3 passed, 3 total (100% completed) in 00:00:28 
+

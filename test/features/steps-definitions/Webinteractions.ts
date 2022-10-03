@@ -1,5 +1,6 @@
 import { Given, When, Then } from "@wdio/cucumber-framework";
 import chai from "chai"
+import logger from "../../helper/logger"
 
 Given (/^Webpage Open$/, async function() {
     await browser.url('https://the-internet.herokuapp.com/')

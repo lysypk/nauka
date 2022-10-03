@@ -1,7 +1,8 @@
+@Advanced
 Feature: Advanced Web Interactions 
 
 
-    @Advanced
+    
     Scenario Outline: Demo adv interactions
         Given Login to inventory app
         When <numberOfProducts> products are listed

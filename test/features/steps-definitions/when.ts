@@ -1,5 +1,6 @@
 import { When } from "@wdio/cucumber-framework";
 import chai from "chai"
+import logger from "../../helper/logger"
 
 When (/^(.*) products are listed$/, async function(numberOfProducts) {
     //if <null>

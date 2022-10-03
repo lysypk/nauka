@@ -1,5 +1,6 @@
 import { Given } from "@wdio/cucumber-framework";
 import chai from "chai"
+import logger from "../../helper/logger"
 
 Given (/^Login to inventory app$/, async function () {
     await browser.url('https://www.saucedemo.com/')

@@ -1,7 +1,9 @@
 import { Given, When, Then } from "@wdio/cucumber-framework";
 import chai from "chai"
+import logger from "../../helper/logger"
 
 Given(/^Google page is opened$/, async function() {
+    logger.info(`${this.testid}: Started logger`) 
     const termsGoogle = await $("[class=tHlp8d]")
     await browser.url("https://www.google.com/")
     await termsGoogle.click()

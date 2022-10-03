@@ -1,7 +1,8 @@
+@demo
 Feature: Demofeature
 
 
-    @demo
+    
     Scenario Outline: Running chrome and google
         Given Google page is opened
         When Search item <searchItem>

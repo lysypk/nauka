@@ -1,0 +1,1 @@
+#Data folder is for project level data, that it is not affected by environment. Good example would be Jira plugin

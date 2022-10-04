@@ -6,9 +6,10 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "wdio": "wdio run test/wdio.conf.ts",
-        "demo": "set DEBUG = Y && npx wdio wdio.conf.ts --cucumberOptions.tagExpression=@demo",
+        "demo": "set DEBUG= Y && npx wdio wdio.conf.ts --cucumberOptions.tagExpression=@demo",
         "uat:example": "npx wdio config/uat.wdio.conf.ts --cucumberOptions.tagExpression=@demo",
-        "debug": "set DEBUG = Y && npx wdio wdio.conf.ts --cucumberOptions.tagExpression=@demo > output.txt"
+        "debug": "set DEBUG= Y && npx wdio wdio.conf.ts --cucumberOptions.tagExpression=@demo > output.txt"
+    
     },
     "author": "",
     "license": "ISC",
@@ -25,9 +26,6 @@
         "ts-node": "^10.9.1",
         "typescript": "^4.8.4",
         "wdio-chromedriver-service": "^8.0.0",
-        "winston": "^3.8.2"
-    },
-    "dependencies": {
         "winston": "^3.8.2"
     }
 }

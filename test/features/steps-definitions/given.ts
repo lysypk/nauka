@@ -9,6 +9,7 @@ Given(/^Login to inventory app$/, async function () {
     // await browser.setTimeout({ implicit: 15000, pageLoad: 100000 })
     // await browser.maximizeWindow()
     try {
+        //@ts-ignore
         await LoginPage.navigateTo(browser.config.baseUrlSauce)
         await LoginPage.loginToSauce(this.testid, process.env.testUsername, process.env.testPassword)
     } 

@@ -93,8 +93,10 @@ export const config: Options.Testrunner = {
         timeouts: { implicit: 15000, pageLoad: 20000, script: 30000 },
         //
         browserName: 'chrome',
-        "goog:chromeOptions": {
-            args: headless.toUpperCase() === "Y" ? ["--disable-web-security", "--headless", "--disable-dev-shm-usage", "--no-sandbox", "--window-size=1920,1080"] : []
+        //headless/other arg
+
+        'goog:chromeOptions': {
+            args: ["--disable-web-security", "--headless", "--disable-dev-shm-usage", "--no-sandbox", "--window-size=1920,1080"]
         }
 
         // If outputDir is provided WebdriverIO can capture driver session logs

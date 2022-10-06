@@ -1,0 +1,13 @@
+{
+    "search.exclude":{
+        "/node_modules":true,},
+    "cucumberautocomplete.steps": [
+    "../test/features/steps-definitions/*.js"
+    ],
+    "cucumberautocomplete.syncfeatures": "/test/features/**/*.feature",
+    "editor.quickSuggestions": {
+        "comments": false,
+        "strings": true,
+        "other": true
+    }
+    }

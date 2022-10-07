@@ -1,53 +1,116 @@
 
-Execution of 3 workers started at 2022-10-03T06:54:25.751Z
+Execution of 5 workers started at 2022-10-07T10:03:41.253Z
 
-[0-0] RUNNING in chrome - C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\AdvancedWebInteractions.feature
-[0-2] RUNNING in chrome - C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\WebInteractions.feature
-[0-1] RUNNING in chrome - C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\demo.feature
-[0-1] [[32mINFO[39m]: Running chrome and google: Started logger
-[0-0] []
-[0-0] PASSED in chrome - C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\AdvancedWebInteractions.feature
-[0-2] PASSED in chrome - C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\WebInteractions.feature
-[0-1] PASSED in chrome - C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\demo.feature
+[0-2] RUNNING in chrome - C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\order.feature
+[0-2] [[32mINFO[39m]: Basic not logged order from category: Started logger, user going to main page
+[0-2] [[32mINFO[39m]: Basic not logged order from category: User selected category
+[0-2] [[32mINFO[39m]: [Basic not logged order from category]: Category successfully selected
+[0-2] Error in "0: And User add to cart any item"
+Step "User add to cart any item" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+	at Feature(C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\order.feature):1:1
+	at Scenario(Basic not logged order from category):4:5
+	at Step(User add to cart any item):7:9
+
+[0-2] Error in "0: And User open minicart"
+Step "User open minicart" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+	at Feature(C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\order.feature):1:1
+	at Scenario(Basic not logged order from category):4:5
+	at Step(User open minicart):8:9
+
+[0-2] Error in "0: And User proceed to checkout"
+Step "User proceed to checkout" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+	at Feature(C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\order.feature):1:1
+	at Scenario(Basic not logged order from category):4:5
+	at Step(User proceed to checkout):9:9
+
+[0-2] Error in "0: And User filled up address form"
+Step "User filled up address form" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+	at Feature(C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\order.feature):1:1
+	at Scenario(Basic not logged order from category):4:5
+	at Step(User filled up address form):10:9
+
+[0-2] Error in "0: And User selected shipping method"
+Step "User selected shipping method" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+	at Feature(C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\order.feature):1:1
+	at Scenario(Basic not logged order from category):4:5
+	at Step(User selected shipping method):11:9
+
+[0-2] Error in "0: Then User review summary and placed order"
+Step "User review summary and placed order" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+	at Feature(C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\order.feature):1:1
+	at Scenario(Basic not logged order from category):4:5
+	at Step(User review summary and placed order):12:9
+
+[0-2] FAILED in chrome - C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\order.feature
 
  "spec" Reporter:
 ------------------------------------------------------------------
-[chrome 106.0.5249.91 windows #0-0] Running: chrome (v106.0.5249.91) on windows
-[chrome 106.0.5249.91 windows #0-0] Session ID: 693895a2352dec0c96fe315caeb5c272
-[chrome 106.0.5249.91 windows #0-0]
-[chrome 106.0.5249.91 windows #0-0] » \test\features\demo\AdvancedWebInteractions.feature
-[chrome 106.0.5249.91 windows #0-0] Advanced Web Interactions
-[chrome 106.0.5249.91 windows #0-0] Demo adv interactions
-[chrome 106.0.5249.91 windows #0-0]    [32m✓[39m Given Login to inventory app
-[chrome 106.0.5249.91 windows #0-0]    [32m✓[39m When 6 products are listed
-[chrome 106.0.5249.91 windows #0-0]    [32m✓[39m Then All product have valid price
-[chrome 106.0.5249.91 windows #0-0]
-[chrome 106.0.5249.91 windows #0-0] [32m3 passing (3.6s)[39m
-------------------------------------------------------------------
-[chrome 106.0.5249.91 windows #0-2] Running: chrome (v106.0.5249.91) on windows
-[chrome 106.0.5249.91 windows #0-2] Session ID: 5348dff0e1ddfedb46233d716d0dc71e
-[chrome 106.0.5249.91 windows #0-2]
-[chrome 106.0.5249.91 windows #0-2] » \test\features\demo\WebInteractions.feature
-[chrome 106.0.5249.91 windows #0-2] Web Interactions
-[chrome 106.0.5249.91 windows #0-2] WEB_TC002: Demo interactions
-[chrome 106.0.5249.91 windows #0-2]    [32m✓[39m Given Webpage Open
-[chrome 106.0.5249.91 windows #0-2]    [32m✓[39m When Perform web interactions
-[chrome 106.0.5249.91 windows #0-2]
-[chrome 106.0.5249.91 windows #0-2] [32m2 passing (5.6s)[39m
-------------------------------------------------------------------
-[chrome 106.0.5249.91 windows #0-1] Running: chrome (v106.0.5249.91) on windows
-[chrome 106.0.5249.91 windows #0-1] Session ID: 3218cc175a52281010abeec562765dc5
-[chrome 106.0.5249.91 windows #0-1]
-[chrome 106.0.5249.91 windows #0-1] » \test\features\demo\demo.feature
-[chrome 106.0.5249.91 windows #0-1] Demofeature
-[chrome 106.0.5249.91 windows #0-1] Running chrome and google
-[chrome 106.0.5249.91 windows #0-1]    [32m✓[39m Given Google page is opened
-[chrome 106.0.5249.91 windows #0-1]    [32m✓[39m When Search item WDIO
-[chrome 106.0.5249.91 windows #0-1]    [32m✓[39m Then Click on first search result
-[chrome 106.0.5249.91 windows #0-1]    [32m✓[39m Then URL should match https://webdriver.io/
-[chrome 106.0.5249.91 windows #0-1]
-[chrome 106.0.5249.91 windows #0-1] [32m4 passing (28.6s)[39m
+[chrome 106.0.5249.103 windows #0-2] Running: chrome (v106.0.5249.103) on windows
+[chrome 106.0.5249.103 windows #0-2] Session ID: 8b8ee8938a029dcf8d85ace1148253cd
+[chrome 106.0.5249.103 windows #0-2]
+[chrome 106.0.5249.103 windows #0-2] » \test\features\demo\order.feature
+[chrome 106.0.5249.103 windows #0-2] Order placement
+[chrome 106.0.5249.103 windows #0-2] Basic not logged order from category
+[chrome 106.0.5249.103 windows #0-2]    [32m✓[39m Given User go to main page
+[chrome 106.0.5249.103 windows #0-2]    [32m✓[39m When User select category
+[chrome 106.0.5249.103 windows #0-2]    [31m✖[39m And User add to cart any item
+[chrome 106.0.5249.103 windows #0-2]    [31m✖[39m And User open minicart
+[chrome 106.0.5249.103 windows #0-2]    [31m✖[39m And User proceed to checkout
+[chrome 106.0.5249.103 windows #0-2]    [31m✖[39m And User filled up address form
+[chrome 106.0.5249.103 windows #0-2]    [31m✖[39m And User selected shipping method
+[chrome 106.0.5249.103 windows #0-2]    [31m✖[39m Then User review summary and placed order
+[chrome 106.0.5249.103 windows #0-2]
+[chrome 106.0.5249.103 windows #0-2] [32m2 passing (4.7s)[39m
+[chrome 106.0.5249.103 windows #0-2] [31m6 failing[39m
+[chrome 106.0.5249.103 windows #0-2]
+[chrome 106.0.5249.103 windows #0-2] 1) Basic not logged order from category And User add to cart any item
+[chrome 106.0.5249.103 windows #0-2] [31mStep "User add to cart any item" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.[39m
+[chrome 106.0.5249.103 windows #0-2] [90mStep "User add to cart any item" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.[39m
+[chrome 106.0.5249.103 windows #0-2] [90m	at Feature(C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\order.feature):1:1[39m
+[chrome 106.0.5249.103 windows #0-2] [90m	at Scenario(Basic not logged order from category):4:5[39m
+[chrome 106.0.5249.103 windows #0-2] [90m	at Step(User add to cart any item):7:9[39m
+[chrome 106.0.5249.103 windows #0-2]
+[chrome 106.0.5249.103 windows #0-2]
+[chrome 106.0.5249.103 windows #0-2] 2) Basic not logged order from category And User open minicart
+[chrome 106.0.5249.103 windows #0-2] [31mStep "User open minicart" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.[39m
+[chrome 106.0.5249.103 windows #0-2] [90mStep "User open minicart" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.[39m
+[chrome 106.0.5249.103 windows #0-2] [90m	at Feature(C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\order.feature):1:1[39m
+[chrome 106.0.5249.103 windows #0-2] [90m	at Scenario(Basic not logged order from category):4:5[39m
+[chrome 106.0.5249.103 windows #0-2] [90m	at Step(User open minicart):8:9[39m
+[chrome 106.0.5249.103 windows #0-2]
+[chrome 106.0.5249.103 windows #0-2]
+[chrome 106.0.5249.103 windows #0-2] 3) Basic not logged order from category And User proceed to checkout
+[chrome 106.0.5249.103 windows #0-2] [31mStep "User proceed to checkout" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.[39m
+[chrome 106.0.5249.103 windows #0-2] [90mStep "User proceed to checkout" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.[39m
+[chrome 106.0.5249.103 windows #0-2] [90m	at Feature(C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\order.feature):1:1[39m
+[chrome 106.0.5249.103 windows #0-2] [90m	at Scenario(Basic not logged order from category):4:5[39m
+[chrome 106.0.5249.103 windows #0-2] [90m	at Step(User proceed to checkout):9:9[39m
+[chrome 106.0.5249.103 windows #0-2]
+[chrome 106.0.5249.103 windows #0-2]
+[chrome 106.0.5249.103 windows #0-2] 4) Basic not logged order from category And User filled up address form
+[chrome 106.0.5249.103 windows #0-2] [31mStep "User filled up address form" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.[39m
+[chrome 106.0.5249.103 windows #0-2] [90mStep "User filled up address form" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.[39m
+[chrome 106.0.5249.103 windows #0-2] [90m	at Feature(C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\order.feature):1:1[39m
+[chrome 106.0.5249.103 windows #0-2] [90m	at Scenario(Basic not logged order from category):4:5[39m
+[chrome 106.0.5249.103 windows #0-2] [90m	at Step(User filled up address form):10:9[39m
+[chrome 106.0.5249.103 windows #0-2]
+[chrome 106.0.5249.103 windows #0-2]
+[chrome 106.0.5249.103 windows #0-2] 5) Basic not logged order from category And User selected shipping method
+[chrome 106.0.5249.103 windows #0-2] [31mStep "User selected shipping method" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.[39m
+[chrome 106.0.5249.103 windows #0-2] [90mStep "User selected shipping method" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.[39m
+[chrome 106.0.5249.103 windows #0-2] [90m	at Feature(C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\order.feature):1:1[39m
+[chrome 106.0.5249.103 windows #0-2] [90m	at Scenario(Basic not logged order from category):4:5[39m
+[chrome 106.0.5249.103 windows #0-2] [90m	at Step(User selected shipping method):11:9[39m
+[chrome 106.0.5249.103 windows #0-2]
+[chrome 106.0.5249.103 windows #0-2]
+[chrome 106.0.5249.103 windows #0-2] 6) Basic not logged order from category Then User review summary and placed order
+[chrome 106.0.5249.103 windows #0-2] [31mStep "User review summary and placed order" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.[39m
+[chrome 106.0.5249.103 windows #0-2] [90mStep "User review summary and placed order" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.[39m
+[chrome 106.0.5249.103 windows #0-2] [90m	at Feature(C:\Users\piotr.kedzierski\Desktop\webio\test\features\demo\order.feature):1:1[39m
+[chrome 106.0.5249.103 windows #0-2] [90m	at Scenario(Basic not logged order from category):4:5[39m
+[chrome 106.0.5249.103 windows #0-2] [90m	at Step(User review summary and placed order):12:9[39m
+[chrome 106.0.5249.103 windows #0-2]
 
 
-Spec Files:	 3 passed, 3 total (100% completed) in 00:00:31 
+Spec Files:	 0 passed, 1 failed, 4 skipped, 5 total (100% completed) in 00:00:08 
 

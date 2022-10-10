@@ -23,4 +23,10 @@ export default class Page {
         }
         await ele.setValue(text)
     }
+    async isDisplayed(ele: WebdriverIO.Element) {
+        await ele.waitForDisplayed({timeout: 10000})
+        if(!ele.elementId) {
+            throw Error(ele.error.message)
+        }
+    }
 }

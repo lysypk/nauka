@@ -18,10 +18,27 @@ When(/^User select category$/, async function () {
     try {
         await MainPage.selectCategory(this.testid)
     } catch (err) {
-        err.message = `Failed during selectin categor ${err.message}`
+        err.message = `Failed during category selection ${err.message}`
         throw err
     }
 })
 When(/^User click on product on listing page$/, async function () {
-
+    logger.info(`${this.testid}: User clicked on random product`)
+    try {
+        await MainPage.selectItem(this.testid)
+    } catch (err) {
+        err.message = `Failed during category selection ${err.message}`
+        throw err
+    }
+})
+When(/^User add product to cart$/, async function() {
+    logger.info(`${this.testid}: User added item to cart`)
+    try {
+        await MainPage.selectSize(this.testid)
+        await MainPage.selectColor(this.testid)
+        await MainPage.addToCart(this.testid)
+    } catch (err) {
+        err.message = `Failed during adding to cart ${err.message}`
+        throw err
+    }
 })

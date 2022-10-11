@@ -24,7 +24,7 @@ export default class Page {
         await ele.setValue(text)
     }
     async isDisplayed(ele: WebdriverIO.Element) {
-        await ele.waitForDisplayed({timeout: 10000})
+        await ele.waitForDisplayed({timeout: 15000})
         if(!ele.elementId) {
             throw Error(ele.error.message)
         }

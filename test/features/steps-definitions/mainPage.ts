@@ -22,3 +22,21 @@ When(/^User select category$/, async function () {
         throw err
     }
 })
+When(/^User open minicart$/, async function () {
+    logger.info(`${this.testid}: User open minicart`)
+    try {
+        await MainPage.openMinicart(this.testid)
+    } catch (err) {
+        err.message = `Failed during clicking on minicart ${err.message}`
+        throw err
+    }
+})
+When (/^User proceed to checkout$/, async function(){
+    logger.info(`${this.test}: User proceed to checkout`)
+    try {
+        await MainPage.goToCheckout(this.testid)
+    } catch (err) {
+        err.message = `Failed during proceeding to checkout ${err.message}`
+        throw err
+    }
+})

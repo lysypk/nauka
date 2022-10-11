@@ -10,18 +10,25 @@ export default class Page {
         // await browser.maximizeWindow()
     }
     async click(ele: WebdriverIO.Element) {
-        await ele.waitForClickable({ timeout: 5000 })
+        await ele.waitForClickable({ timeout: 15000 })
         if (!ele.elementId) {
             throw Error(ele.error.message)
         }
         await ele.click()
     }
     async typeInto(ele: WebdriverIO.Element, text: string) {
-        await ele.waitForDisplayed({ timeout: 5000 })
+        await ele.waitForDisplayed({ timeout: 15000 })
         if (!ele.elementId) {
             throw Error(ele.error.message)
         }
         await ele.setValue(text)
+    }
+    async addValueTo(ele: WebdriverIO.Element, text: string) {
+        await ele.waitForDisplayed({ timeout: 15000 })
+        if (!ele.elementId) {
+            throw Error(ele.error.message)
+        }
+        await ele.addValue(text)
     }
     async isDisplayed(ele: WebdriverIO.Element) {
         await ele.waitForDisplayed({timeout: 15000})

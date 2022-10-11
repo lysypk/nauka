@@ -9,6 +9,8 @@ class MainPage extends Page {
     //Page objects
     get womenCategory() {return $('#ui-id-4')}
     get womenTop() {return $('#ui-id-9')}
+    get minicart() {return $('.action.showcart')}
+    get goToCheckoutButton() {return $('#top-cart-btn-checkout')}
 
     //Methods
     async selectCategory(testid: string) {
@@ -20,6 +22,27 @@ class MainPage extends Page {
             err.message = `Error while selecting category, ${err.message}`
             throw err
         }
+    }
+    async openMinicart(testid: string) {
+        try {
+            await this.click(await this.minicart)
+            reporter.addStep(testid, "info", "User clicked on minicart")
+            
+        } catch (err) {
+            err.message = `Error while clicking on minicart, ${err.message}`
+            throw err
+            
+        }
+    }
+    async goToCheckout(testid: string) {
+        try {
+            await this.click(await this.goToCheckoutButton)
+            reporter.addStep(testid, "info", "User clicked on go to checkout button")
+        } catch (err) {
+            err.message = `Error while clicking on go to checkout button, ${err.message}`
+            throw err 
+        }
+
     }
 }
 export default new MainPage()

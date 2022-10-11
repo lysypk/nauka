@@ -1,7 +1,7 @@
 @magentoOrder
 Feature: Order placement
 
-    Scenario Outline: Basic not logged order from category
+    Scenario Outline: Order placement for not logged user
         Given User go to main page
         #Think about category randomizing
         When User select category

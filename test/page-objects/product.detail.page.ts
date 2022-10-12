@@ -41,7 +41,7 @@ class ProductDetail extends Page {
             await this.isDisplayed(await this.successMessageAddToCart)
             reporter.addStep(testid,"info", "Success message is displayed")
         } catch (err) {
-            err.message = `Add to cart is unavailabe, ${err.message}`
+            err.message = `Add to cart is unavailabe or cannot add product to cart ${err.message}`
             throw err
         }
     }

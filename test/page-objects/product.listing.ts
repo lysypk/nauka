@@ -11,7 +11,7 @@ class ProductListing extends Page {
     //Methods
     async selectItem(testid: string) {
         try {
-            await this.click(await this.products[0])
+            await this.click(await this.products[await this.randomizer(await this.products)])
             reporter.addStep(testid, "info", `Product successfully selected`)
         } catch (err) {
             err.message = `Error while selecting product, ${err.message}`

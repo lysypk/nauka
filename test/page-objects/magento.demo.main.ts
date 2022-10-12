@@ -1,14 +1,18 @@
 import Page from "./page";
 import chai, { assert, use } from "chai";
 import reporter from "../helper/reporter"
+import logger from "../helper/logger"
 
 class MainPage extends Page {
     constructor() {
         super()
     }
     //Page objects
-    get womenCategory() {return $('#ui-id-4')}
-    get womenTop() {return $('#ui-id-9')}
+    /* it's better for this specific project to add every category by ID
+    and use them as different scenarios than use randomizer*/
+    
+    get womenCategory() {return $('#ui-id-4')} 
+    get womenTop() {return $('#ui-id-9')} 
     get minicart() {return $('.action.showcart')}
     get goToCheckoutButton() {return $('#top-cart-btn-checkout')}
 
@@ -19,8 +23,7 @@ class MainPage extends Page {
             await this.click(await this.womenTop)
             reporter.addStep(testid, "info", `Category successfully selected` )
         } catch (err) {
-            err.message = `Error while selecting category, ${err.message}`
-            throw err
+            logger.error(`Error while selecting category, probably no-sub category ${err.message}`)
         }
     }
     async openMinicart(testid: string) {

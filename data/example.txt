@@ -9,5 +9,3 @@ random_number = str(random.randint(1, 99999999))
         email = "randomemail+" + first_name + last_name + random_number + "@gmail.com"
 
 
-
-//let $$(selector).lenght? 

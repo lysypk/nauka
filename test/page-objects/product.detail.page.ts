@@ -1,6 +1,7 @@
 import Page from "./page";
 import chai, { assert, use } from "chai";
 import reporter from "../helper/reporter"
+import logger from "../helper/logger";
 
 class ProductDetail extends Page {
     constructor() {
@@ -21,8 +22,7 @@ class ProductDetail extends Page {
             console.log(this.sizes.length)
             reporter.addStep(testid, "info", `Size successfully selected ${await this.sizes.length}`)  
         } catch (err) {
-            err.message = `Product size unavailable, ${err.message}`
-            throw err
+            logger.error(`Product size unavailable, ${err.message}`)
             
         }
     }
@@ -31,8 +31,7 @@ class ProductDetail extends Page {
             await this.click(await this.colors[await this.randomizer(await this.colors)])
             reporter.addStep(testid, "info", "Color is selected")
         } catch (err) {
-            err.message = `Color is unavailable, ${err.message}`
-            throw err
+            logger.error(`Color is unavailable, ${err.message}`)
         }
     }
     async addToCart(testid: string) {

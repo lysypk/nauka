@@ -13,12 +13,13 @@ class ProductDetail extends Page {
     get colors() {return $$('.swatch-option.color')}
     get addToCartButton() {return $('#product-addtocart-button')}
     get successMessageAddToCart() {return $('.message-success')}
-
+    
     //Methods
     async selectSize(testid: string) {
         try {
-            await this.click(await this.sizes[0])
-            reporter.addStep(testid, "info", `Size successfully selected`)  
+            await this.click(await this.sizes[await this.randomizer(await this.sizes)])
+            console.log(this.sizes.length)
+            reporter.addStep(testid, "info", `Size successfully selected ${await this.sizes.length}`)  
         } catch (err) {
             err.message = `Product size unavailable, ${err.message}`
             throw err
@@ -27,7 +28,7 @@ class ProductDetail extends Page {
     }
     async selectColor(testid: string) {
         try {
-            await this.click(await this.colors[0])
+            await this.click(await this.colors[await this.randomizer(await this.colors)])
             reporter.addStep(testid, "info", "Color is selected")
         } catch (err) {
             err.message = `Color is unavailable, ${err.message}`

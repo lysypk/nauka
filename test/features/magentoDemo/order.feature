@@ -1,11 +1,9 @@
 @magentoOrder
 Feature: Order placement
 
-    Scenario Outline: Order placement for not logged user
+    Scenario Outline: <TestID> Order placement for not logged user
         Given User go to main page
-        #Think about category randomizing
         When User select category
-        #Think about randomizing
         And User click on product on listing page
         #Find the way to skip if do not have size/color
         And User add product to cart

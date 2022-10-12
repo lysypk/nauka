@@ -36,4 +36,7 @@ export default class Page {
             throw Error(ele.error.message)
         }
     }
+    async randomizer(selectorsArray: WebdriverIO.ElementArray) {
+        return Math.floor(Math.random()* selectorsArray.length)
+    }
 }

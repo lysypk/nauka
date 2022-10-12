@@ -19,8 +19,7 @@ class ProductDetail extends Page {
     async selectSize(testid: string) {
         try {
             await this.click(await this.sizes[await this.randomizer(await this.sizes)])
-            console.log(this.sizes.length)
-            reporter.addStep(testid, "info", `Size successfully selected ${await this.sizes.length}`)  
+            reporter.addStep(testid, "info", `Size successfully selected`)  
         } catch (err) {
             logger.error(`Product size unavailable, ${err.message}`)
             

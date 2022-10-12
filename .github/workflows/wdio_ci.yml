@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Running example
-        run: npm run demo_magento "@magentoOrder"
+        run: npm run demo_magento_headless "@magentoOrder"
       - name: Get Allure History
         uses: actions/checkout@v2
         if: always()

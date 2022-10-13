@@ -8,7 +8,7 @@ When(/^User filled up registration form$/, async function() {
     try {
         browser.pause(3000)
         await Registration.fillRegistrationForm(this.testid)
-        //await Registration.confirmRegistration(this.testid)
+        await Registration.confirmRegistration(this.testid)
     } catch (err) {
         err.message = `Error during registration process: ${err.message}`
         throw err

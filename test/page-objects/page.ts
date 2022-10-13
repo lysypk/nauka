@@ -39,4 +39,9 @@ export default class Page {
     async randomizer(selectorsArray: WebdriverIO.ElementArray) {
         return Math.floor(Math.random()* selectorsArray.length)
     }
+    async randomNumber() {
+        //or math ranodm? - return Math.floor(Math.random()* 1000000000)
+        return (+new Date).toString(36).slice(-10)
+    }
+
 }

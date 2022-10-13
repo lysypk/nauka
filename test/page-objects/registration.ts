@@ -13,7 +13,7 @@ class Registration extends Page {
     get emailPasswordField() {return $('#password')}
     get emailPasswordConfirmationField() {return $('#password-confirmation')}
     get newsletterRegCheckbox() {return $('#is_subscribed')}
-    get registrationConfirmationButton() {return $('.button[title="Create an Account"]')}
+    get registrationConfirmationButton() {return $('.action.submit.primary')}
 
     //Methods
     async fillPersonalInformation(testid: string) {
@@ -42,7 +42,7 @@ class Registration extends Page {
     async fillSignInInformation(testid:string) {
         try {
             await this.click(await this.emailRegField)
-            await this.addValueTo(await this.emailRegField, "piotr.kedzierski+" + "123" + "@orba.co")
+            await this.addValueTo(await this.emailRegField, `piotr.kedzierski+registration${await this.randomNumber()}` + "@orba.co")
             await this.click(await this.emailPasswordField)
             await this.addValueTo(await this.emailPasswordField, "Qweasdzxc1!")
             await this.click(await this.emailPasswordConfirmationField)

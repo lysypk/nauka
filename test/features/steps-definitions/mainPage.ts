@@ -40,3 +40,12 @@ When (/^User proceed to checkout$/, async function(){
         throw err
     }
 })
+When(/^User click on Create Account button$/, async function(){
+    logger.info(`${this.test}: User is trying to click on Create Account button`)
+    try {
+        await MainPage.clickOnCreateAccount(this.testid)
+    } catch (err) {
+        err.message = `Failed during attempt to click on Create Account button ${err.message}`
+        throw err
+    }
+})

@@ -15,6 +15,7 @@ class MainPage extends Page {
     get womenTop() {return $('#ui-id-9')} 
     get minicart() {return $('.action.showcart')}
     get goToCheckoutButton() {return $('#top-cart-btn-checkout')}
+    get createAccountButton() {return $("//div[@class='panel header']//a[normalize-space()='Create an Account']")}
 
     //Methods
     async selectCategory(testid: string) {
@@ -46,6 +47,15 @@ class MainPage extends Page {
             throw err 
         }
 
+    }
+    async clickOnCreateAccount(testid: string) {
+        try {
+            await this.click(await this.createAccountButton)
+            reporter.addStep(testid, "info", "User clicked on create account button")
+        } catch (err) {
+            err.message = ~`Error while clicking create account: ${err.message}`
+            throw err
+        }
     }
 }
 export default new MainPage()

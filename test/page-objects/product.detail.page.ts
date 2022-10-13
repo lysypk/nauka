@@ -8,21 +8,21 @@ class ProductDetail extends Page {
         super()
     }
     //Page objects
-    
-    get products() {return $$('.product-image-photo')}
-    get sizes() {return $$('.swatch-option.text')}
-    get colors() {return $$('.swatch-option.color')}
-    get addToCartButton() {return $('#product-addtocart-button')}
-    get successMessageAddToCart() {return $('.message-success')}
-    
+
+    get products() { return $$('.product-image-photo') }
+    get sizes() { return $$('.swatch-option.text') }
+    get colors() { return $$('.swatch-option.color') }
+    get addToCartButton() { return $('#product-addtocart-button') }
+    get successMessageAddToCart() { return $('.message-success') }
+
     //Methods
     async selectSize(testid: string) {
         try {
             await this.click(await this.sizes[await this.randomizer(await this.sizes)])
-            reporter.addStep(testid, "info", `Size successfully selected`)  
+            reporter.addStep(testid, "info", `Size successfully selected`)
         } catch (err) {
             logger.error(`Product size unavailable, ${err.message}`)
-            
+
         }
     }
     async selectColor(testid: string) {
@@ -36,9 +36,9 @@ class ProductDetail extends Page {
     async addToCart(testid: string) {
         try {
             await this.click(await this.addToCartButton)
-            reporter.addStep(testid,"info", "User clicked on add to cart button")
+            reporter.addStep(testid, "info", "User clicked on add to cart button")
             await this.isDisplayed(await this.successMessageAddToCart)
-            reporter.addStep(testid,"info", "Success message is displayed")
+            reporter.addStep(testid, "info", "Success message is displayed")
         } catch (err) {
             err.message = `Add to cart is unavailabe or cannot add product to cart ${err.message}`
             throw err
@@ -47,4 +47,4 @@ class ProductDetail extends Page {
 
 }
 
-    export default new ProductDetail()
+export default new ProductDetail()

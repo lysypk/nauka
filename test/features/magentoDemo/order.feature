@@ -15,7 +15,7 @@ Feature: Order placement
 
         Examples:
             | TestID    | 
-            | WEB_TC001 |
+            | ORDER_TC001 |
   
 
 

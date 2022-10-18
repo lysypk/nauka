@@ -14,8 +14,8 @@ Feature: Order placement
         Then User review summary and placed order
 
         Examples:
-            | TestID    | 
-            | ORDER_TC001 |
+            | TestID    |  
+            | ORDER_TC001 | 
   
 
 

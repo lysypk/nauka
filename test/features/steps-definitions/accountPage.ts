@@ -1,7 +1,6 @@
 import { Given, When, Then } from "@wdio/cucumber-framework";
 import chai from "chai"
 import logger from "../../helper/logger"
-import account from "../../page-objects/account";
 import AccountPage from "../../page-objects/account"
 
 Then(/^User user can see his account page$/, async function() {

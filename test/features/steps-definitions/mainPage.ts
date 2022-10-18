@@ -8,6 +8,7 @@ Given(/^User go to main page$/, async function () {
     try {
         //@ts-ignore
         await MainPage.navigateTo(browser.config.baseUrlSite)
+        await browser.maximizeWindow()
     } catch (err) {
         err.message = `Failed enter website ${err.message}`
         throw err
@@ -32,7 +33,7 @@ When(/^User open minicart$/, async function () {
     }
 })
 When (/^User proceed to checkout$/, async function(){
-    logger.info(`${this.test}: User proceed to checkout`)
+    logger.info(`${this.testid}: User proceed to checkout`)
     try {
         await MainPage.goToCheckout(this.testid)
     } catch (err) {
